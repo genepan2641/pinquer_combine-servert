@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Pinquer 評課部落</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="stylesheets/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="stylesheets/login.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <!-- <link href="font-awesome/stylesheets/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.javascripts/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+
+<body id="page-top" class="index">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top"><img src="images/pinquer_logo.png" alt=""></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-left">
+                  <li>
+                    <a href="" class="page-scroll">瀏覽課程</a>
+                  </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">登入註冊</a>
+                    </li>
+                </ul>
+                <form class="navbar-form navbar-right" role="search">
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="輸入課名">
+                  </div>
+                  <button type="/Volumes/Macintosh%20HD/Users/YuChuChen/Downloads/pinquer-gh-pages/login.htmlsubmit" class="btn btn-default">搜尋</button>
+                </form>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+   
+   
+<!--    here  -->
+<div class="typein">
+   <div class="login-box">
+       <form action="" method="post">
+        <h3 class="color-black">登入</h3>
+        <h5 >學校信箱</h5>
+        <input type="email" name="login_email" placeholder="ex.100100001@nccu.edu.tw" class="form-control">
+        <h5>密碼</h5>
+        <input type="password" name = "login_pwd" class="form-control">
+        <button type="submit" value="login" name="login" class="btn btn-default" >登入</button>           
+       </form>
+
+		
+		
+    </div> 
+    
+    <div class="sign-up-box">
+        <form action="" method="post">
+            <h3>註冊</h3>
+            <h5>學校信箱</h5>
+            <input type="email" name="register_email" placeholder="ex.10010001@nccu.edu.tw" class="form-control">
+            <h5>密碼</h5>
+            <input type="password" name="register_pwd" class="form-control">
+            <h5>再輸入一次密碼</h5>
+            <input type="password" name="register_pwd_again" class="form-control">
+            <button type="submit" name="register" value="register" class="btn btn-default">確認送出</button>            
+        </form>
+
+    </div>
+</div>   
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript">
+    
+(function(){
+    var homeCourse = $('.home-course'),
+        logoGreen = '#209e40',
+        brown = '#932009';
+    // function hoverColor (childClass,color) {
+    //     $(this)
+    //         .children('h3').css('color', color)
+    //         .end()
+    //         .children('.post-time').css('color', color);  
+    // }
+
+
+
+    homeCourse.on('mouseenter', function(){
+        $(this)
+            .children('h3').css('color', logoGreen)
+            .end()
+            .children('.prof').css('color', logoGreen);
+    }).on('mouseleave', function(){
+        $(this)
+            .children('h3').css('color', brown)
+            .end()
+            .children('.prof').css('color', brown);
+    });
+
+    var homeFeedback = $(".home-essay[data-type='feedback']"),
+        homeAsk = $(".home-essay[data-type='ask']"),
+        homeNotice = $(".home-essay[data-type='notice']"),
+        essayGreen = '#107b5d',
+        essayOrg = '#f0542a',
+        essayYellow = '#f3ae1e';
+
+
+    homeFeedback.on('mouseenter', function(){
+        $(this)
+            .children('h3').css('color', essayGreen)
+            .end()
+            .children('.post-time').css('color', essayGreen);
+    }).on('mouseleave', function(){
+        $(this)
+            .children('h3').css('color', brown)
+            .end()
+            .children('.post-time').css('color', brown);
+    });
+    homeAsk.on('mouseenter', function(){
+        $(this)
+            .children('h3').css('color', essayYellow)
+            .end()
+            .children('.post-time').css('color', essayYellow);
+    }).on('mouseleave', function(){
+        $(this)
+            .children('h3').css('color', brown)
+            .end()
+            .children('.post-time').css('color', brown);
+    });
+    homeNotice.on('mouseenter', function(){
+        $(this)
+            .children('h3').css('color', essayOrg)
+            .end()
+            .children('.post-time').css('color', essayOrg);
+    }).on('mouseleave', function(){
+        $(this)
+            .children('h3').css('color', brown)
+            .end()
+            .children('.post-time').css('color', brown);
+    });
+})();
+
+
+</script>
+
+    
+
+    
+<footer id="footerDomain">
+    <div class="bottom-info">
+    <img src="images/logo_white.png" alt="">
+      <p>COPYRIGHT © ALL RIGHTS RESERVED.</p>
+    </div>
+</footer>
+</body>
+
+</html>
+
+
+<!-- 
+
+
+
+
+
+
+-->
