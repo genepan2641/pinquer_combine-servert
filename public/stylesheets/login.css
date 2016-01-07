@@ -1,6 +1,6 @@
 body {
   font-family: "Helvetica Neue","Microsoft Yahei",sans-serif,serif;
-  background: url("../img/bg.jpg") repeat;
+  background: url("../images/bg.jpg") repeat;
   margin-top: 80px; }
 
 hr {
@@ -54,15 +54,15 @@ nav .container {
       margin-bottom: 0; }
 
 .typein {
-  width:30%;
-  margin: auto;
+	width:25%;
+	margin: auto;
 }
 .typein button {
-  display: block;
-  margin: 10px auto;
-  width: 100%;
-  background-color: #209031;
-  color: white;
+	display: block;
+	margin: 10px auto;
+	width: 100%;
+	background-color: #209031;
+	color: white;
 }
 .login-box {
   width: 100%;
@@ -85,12 +85,12 @@ nav .container {
 
 .login-box input,
 .sign-up-box input {
-  width: 100%;
+	width: 100%;
 }
 
 h5{
-    text-align: left;
-  }
+		text-align: left;
+	}
 
 
 .sign-up-box {
@@ -112,21 +112,6 @@ h5{
   -webkit-box-shadow: 0 0 5px 0 #A1A1A1;
   box-shadow: 0 0 5px 0 #A1A1A1; }
   
-
-@media  (max-width: 1024px) {
-  .typein {
-    width: 40%;
-  }
-}
-@media  (max-width: 768px) {
-  .typein {
-    width: 50%;
-  }
-}
-@media  (max-width: 480px) {
-  .typein {
-    width: 85%;
-  }
-}
+  
 
 /*# sourceMappingURL=home.css.map */
